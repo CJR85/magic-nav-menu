@@ -75,7 +75,7 @@ body {
   letter-spacing: 0.05em;
   transition: 0.5s;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(-32px);
 }
 
 .navigation ul li.active a .text {
@@ -92,4 +92,28 @@ body {
   border-radius: 50%;
   border: 6px solid var(--clr);
   transition: 0.5s;
+}
+
+.indicator::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 10px 0 0 var(--clr);
+}
+
+.indicator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0px 10px 0 0 var(--clr);
 }
