@@ -63,7 +63,7 @@ body {
   color: var(--clr);
 }
 
-.navigation ul li:hover a .icon {
+.navigation ul li.active a .icon {
   transform: translateY(-35px);
 }
 
@@ -78,7 +78,18 @@ body {
   transform: translateY(20px);
 }
 
-.navigation ul li:hover a .text {
+.navigation ul li.active a .text {
   opacity: 1;
   transform: translateY(10px);
+}
+
+.indicator {
+  position: absolute;
+  top: -50%;
+  width: 70px;
+  height: 70px;
+  background: #8c29fd;
+  border-radius: 50%;
+  border: 6px solid var(--clr);
+  transition: 0.5s;
 }
